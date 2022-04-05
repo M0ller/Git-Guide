@@ -1,14 +1,14 @@
-#Git and GitHub Summary
+# Git and GitHub Summary
 
 < some text > the “< >” is to illustrate what text that should be in that position.
 
-#Create git repository
+## Create git repository
 do it either with the terminal or manually.
 Ex 
 mkdir myproject
 cd myproject
 
-#Copy a remote branch repository (from Github):
+## Copy a remote branch repository (from Github):
 Be in the folder where you want your repo to be created.
 
 Write:
@@ -32,16 +32,16 @@ or “git branch -r” (to see only remote branches).
 Then just move into that branch by writing:
 git checkout <Branch name>
 
-#Initialize the git repository:
+## Initialize the git repository:
 git init
 
-#Check the current state of the files in the folder:
+## Check the current state of the files in the folder:
 git status
 
-#Remove a file:
+## Remove a file:
 git rm -f <filename>
 
-#Add / stage file/files before a commit:
+## Add / stage file/files before a commit:
 Single file write:
 git add <file name >
 example;
@@ -57,7 +57,7 @@ or:
 git add -A
 ( “-A” is a short command for “--all” )
 
-#Create a commit:
+## Create a commit:
 git commit -m “my first commit”
 
 But before doing a commit be sure that you have used “git add <file you want to add>” or “git add .” to add all files in the repo to be staged (“staged” meaning preparing which files you want to commit, so “git add” is just preparing the files.) 
@@ -66,7 +66,7 @@ If you have added a file but regret it you can revert it by writing
 “git reset <the file you added which you want to revert>”
 Or just “git reset” and the changes will be reverted. So if you use a “git status” again you will see that changes haven't been staged again.
 
-#Undo a commit:
+## Undo a commit:
 
 If you have gone through a commit like the following.
 git add README.md
@@ -85,12 +85,12 @@ git reset  -- hard <hashcode>
 This will unstage all “git added files” and commits and remove everything back to that point in time.
 
 
-#See last Changes/ Look in history
+## See last Changes/ Look in history
 If you want to see the last changes that have been made you can write “git log” and then click with space-bar to see further back in the history. Each change will have a long Hashcode which you can use to reset a specific change in the history.
 
 To jump out of the log click “q”
 
-#Git add+commit shortcut
+## Git add+commit shortcut
 A shortcut to use both git add and commit if its a single file you can write “-am”
 But it only works on modified files. And there must have been a “git add “ and “git commit” before.
 TLDR, a “git commit -am ‘message’ “ can’t be the first commit done in the folder.
@@ -98,7 +98,7 @@ TLDR, a “git commit -am ‘message’ “ can’t be the first commit done in 
 Write:
 git commit -am “my message”
 
-#Create new a branch (creates a branch and move to that branch) 
+## Create new a branch (creates a branch and move to that branch) 
 To see display all existing branches use:
 git branch
 
@@ -113,7 +113,7 @@ git checkout -b <my branch name>
 To move to specific branch use:
 git checkout <branch name>
 
-#Upload a repo to github
+## Upload a repo to github
 Create a new repository on your github and if you want to push an existing repo from your directory from your local computer (that you are currently on) use the second option on github
 ”…or push an existing repository from the command line”
 
@@ -122,7 +122,7 @@ git remote add origin git@github.com:M0ller/new.git
 git branch -M main
 git push -u origin main
 
-#Push a branch to github
+## Push a branch to github
 (branch name is the name you have created on your local computer. If you use ”main” as branch name which is usually the standard name of your branch)
 You specify branch you want to push to in the <branch name>.
 (If you have already established a connection with “git push -u origin <branch name>” you only need to write “git push”)
@@ -137,7 +137,7 @@ You could replace “origin” to the address to your repo folder on github for 
 
 git push git@github.com:M0ller/new.git <branch name>
 
-#To push files to the a connected repo
+## To push files to the a connected repo
 git push origin master
 
 To avoid writing origin master every time we can write:
@@ -153,7 +153,7 @@ git push -u origin <branch name>
 
 “--set-upstream” is the same as “-u” 
 
-#To connect a local repo to github
+## To connect a local repo to github
 Create a new repo in github and copy its ssh or http link. 
 (example: git@github.com:M0ller/new.git )
 Then write in the commandline
@@ -163,25 +163,25 @@ git remote add origin <ssh link>
 To check the remote connection you have made write:
 git remote -v
 
-#Compare two branches
+## Compare two branches
 Display different between two branches. If you are in your master branch and want to look at the differences between it and another branch you write:
 
 git diff <name of the other branch>
 
-#Compare & Pull request on github
+## Compare & Pull request on github
 On Github you can do a “compare & pull request” to create a pull request, there you can compare two branches and then merge them together. Example; comparing myOtherBranch with master, there you can choose to create a “create pull request” and also with option to write commets about changes.
 
 After clicking the “create pull request” you can choose to “resolve conversation” before you click the “Merge pull request” which will finalize the merge onto master branch.
 
 After doing that on github, make sure to use a “git pull” on your local computer in the right branch so it will also be updated.
 
-#Delete a branch
+## Delete a branch
 When you are done with the branch you can delete it by writing
 “-d” is for delete.
 
 git branch -d <name of branch to be deleted>
 
-#Merge;
+## Merge;
 
 If there is changes in the master branch you want to make a pull request to your local computer so you master branch stays updated with the code that is on github. Example use “git pull”.
 
