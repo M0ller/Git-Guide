@@ -157,6 +157,29 @@ git remote add origin git@github.com:M0ller/new.git
 git branch -M main
 git push -u origin main
 ```
+  
+## Pull and Fetch to github
+Before you want to push your project to github make sure you have med a:
+```
+git pull
+```
+this will tell that the local version is the latest version of that project in that branch compared to the one that exist on github.
+So when you do your git push it will overwrite the old version on github.
+
+
+-// Unsure
+If you instead want to overwrite the version of the project you have locally you can run:
+```
+git fetch
+```
+it will overwrite your local version to the version that exist on github.
+(you can run a 
+```
+git diff ...origin 
+```
+to check the difference between the versions.)
+-//
+  
 ## Push a branch to github
 (branch name is the name you have created on your local computer. If you use ”main” as branch name which is usually the standard name of your branch)
 You specify branch you want to push to in the <branch name>.
