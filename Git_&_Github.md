@@ -245,12 +245,19 @@ After clicking the “create pull request” you can choose to “resolve conver
 
 After doing that on github, make sure to use a “git pull” on your local computer in the right branch so it will also be updated.
 
-## Delete a branch
+## Delete a local branch
 When you are done with the branch you can delete it by writing
 “-d” is for delete.
 ```
 git branch -d < name of branch to be deleted >
 ```
+  
+## Delete a remote branch
+To delete a branch remotely (on your github repository) you write:
+```
+git push origin --delete < branch name to be deleted >
+```
+  
 ## Merge;
 
 If there is changes in the master branch you want to make a pull request to your local computer so you master branch stays updated with the code that is on github. Example use “git pull”.
