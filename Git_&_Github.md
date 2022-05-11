@@ -258,6 +258,13 @@ To delete a branch remotely (on your github repository) you write:
 git push origin --delete < branch name to be deleted >
 ```
   
+## Replace a lokal branch with a remote branch
+To replace a lokal branch with a remote branch you need to first 1.delete your local branch, then 2.fetch the remote branch, then 3.rebuild the local branch with the remote branch.
+```
+git branch -D <local branch>
+git fetch origin <remote branch>
+git checkout -b <local branch> origin/<remote branch>
+```
 ## Merge;
 
 If there is changes in the master branch you want to make a pull request to your local computer so you master branch stays updated with the code that is on github. Example use “git pull”.
