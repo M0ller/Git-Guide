@@ -1,5 +1,7 @@
 # Git and GitHub Summary
 
+This is my own customized Git & Github "Cheat sheet/Guide" because my memory is like a goldfish. Feel free to use.
+
 < some text > the “< >” is to illustrate what text that should be in that position.
 
 ## Create git repository
