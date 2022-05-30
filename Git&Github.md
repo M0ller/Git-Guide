@@ -102,7 +102,11 @@ If you have local changes on your branch and want to change to another branch yo
   example: 
   ```git commit -m "My commit message"```
   
-  To stash your changes you use the keyword ```Not added yet```
+  To stash your changes you use the keyword ```stash```.
+  example:
+  ```git stash```
+  git stash stores away the local changes in its own directory where you later can revisit a list of stashes. Generaly not recommended to use.
+  Can add more indept explanation for how to use the stash command.
   
   
 ## Undo a commit:
