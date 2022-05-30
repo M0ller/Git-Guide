@@ -87,6 +87,24 @@ If you have added a file but regret it you can revert it by writing
 “git reset <the file you added which you want to revert>”
 Or just “git reset” and the changes will be reverted. So if you use a “git status” again you will see that changes haven't been staged again.
 
+## Changing Branch with checkout
+  
+If you have local changes on your branch and want to change to another branch you have three options before changing to the new branch.
+  1. Trash your local changes.
+  2. Commit your local changes.
+  3. Stash your local changes.
+  
+  To Trash your local changes you use the keyword ```-f```or ```--force``` after the checkout command.
+  example:
+  ```git checkout -f <Branch name>```
+  
+  To commit your changes you use the ```commit -m``` command.
+  example: 
+  ```git commit -m "My commit message"```
+  
+  To stash your changes you use the keyword ```Not added yet```
+  
+  
 ## Undo a commit:
 
 If you have gone through a commit like the following.
