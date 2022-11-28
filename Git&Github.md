@@ -4,6 +4,10 @@ This is my own customized Git & Github "Cheat sheet/Guide" because my memory is 
 
 < some text > the “< >” is to illustrate what text that should be in that position.
 
+## Sections
+* [Create git repository](#create-git-repository)
+* [Merge](#merge)
+
 ## Create git repository
 do it either with the terminal or manually.
 Ex 
