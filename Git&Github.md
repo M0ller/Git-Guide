@@ -10,7 +10,7 @@ This is my own customized Git & GitHub "Cheat sheet/Guide" because my memory is 
 * [Initialize the git repository](#initialize-the-git-repository)
 * [Check the current state of the files in the folder](#check-the-current-state-of-the-files-in-the-folder)
 * [Remove a file](#remove-a-file)
-* [Add / stage file/files before a commit](#add-/-stage-file/files-before-a-commit)
+* [Add file before a commit](#add-file-before-a-commit)
 * [Create a commit](#create-a-commit)
 * [Changing Branch with checkout](#changing-branch-with-checkout)
 * [Undo a commit](#undo-a-commit)
@@ -32,8 +32,8 @@ This is my own customized Git & GitHub "Cheat sheet/Guide" because my memory is 
 ## Create git repository
 do it either with the terminal or manually.
 Ex 
-mkdir myproject
-cd myproject
+mkdir myProject
+cd myProject
 
 [Return to Top](#git-and-github-summary)
 ## Copy a remote branch repository (from GitHub)
@@ -43,7 +43,7 @@ Write:
 ```
 git clone <github repo URL/SSH>  <Optional, write the name you want your folder to have>
 ```
-Clone(copy) a specific remote branch repository (from Github):
+Clone(copy) a specific remote branch repository (from GitHub):
 This will only copy the specific branch you want to work in.
 write:
 ```
@@ -57,7 +57,7 @@ git clone --branch <branch name you want to clone> <github url>
 
 -----------------
 If you have made a 
-'git clone <github url>'
+'git clone <GitHub url>'
 already and is in the main branch you can run a 'git branch -a' (to see all branches locally and remote)
 or 'git branch -r' (to see only remote branches)
 Then just move into that branch by writing:
@@ -85,7 +85,7 @@ git checkout < Branch name >
 ```
 
 [Return to Top](#git-and-github-summary)
-## Add / stage file/files before a commit
+## Add file before a commit
 Single file write:
 ```
   git add <file name >
@@ -139,8 +139,8 @@ If you have local changes on your branch and want to change to another branch yo
   To stash your changes you use the keyword ```stash```.
   example:
   ```git stash```
-  git stash stores away the local changes in its own directory where you later can revisit a list of stashes. Generaly not recommended to use.
-  Can add more indept explanation for how to use the stash command.
+  git stash stores away the local changes in its own directory where you later can revisit a list of stashes. Generally not recommended to use.
+  Can add more indent explanation for how to use the stash command.
 
 [Return to Top](#git-and-github-summary)
 ## Undo a commit
@@ -154,7 +154,7 @@ Now you regret going through these steps you can write
 ```
   git reset HEAD~1
 ```
-What is happening here is that it will revert the changes, “HEAD” meaning the last command that have been done in git, but we did run two git commands so we use the “~” and then add “1” so it will revert back to the last one plus one extra step.
+What is happening here is that it will revert the changes, “HEAD” meaning the last command that have been done in git, but we did run two git commands, so we use the “~” and then add “1” so it will revert to the last one plus one extra step.
 If you want to revert a specific change that have been done further back you can write: 
 ```
   git reset <hashcode of that change>
@@ -165,7 +165,7 @@ If you want to revert changes and have temp completely removed back to a certain
 ```
   git reset  -- hard <hashcode>
   ```
-This will unstage all “git added files” and commits and remove everything back to that point in time.
+This will onstage all “git added files” and commits and remove everything back to that point in time.
 
 [Return to Top](#git-and-github-summary)
 ## See last changes/history
@@ -179,7 +179,7 @@ To jump out of the log click “q”
 
 [Return to Top](#git-and-github-summary)
 ## Git add+commit shortcut
-A shortcut to use both git add and commit if its a single file you can write “-am”
+A shortcut to use both git add and commit if it's a single file you can write “-am”
 But it only works on modified files. And there must have been a “git add “ and “git commit” before.
 TLDR, a “git commit -am ‘message’ “ can’t be the first commit done in the folder.
 
@@ -211,7 +211,7 @@ git checkout <branch name>
 
 [Return to Top](#git-and-github-summary)
 ## Upload a repo to GitHub
-Create a new repository on your github and if you want to push an existing repo from your directory from your local computer (that you are currently on) use the second option on github
+Create a new repository on your GitHub and if you want to push an existing repo from your directory from your local computer (that you are currently on) use the second option on GitHub
 ”…or push an existing repository from the command line”
 
 copy the git commands it provides example:
@@ -227,8 +227,8 @@ Before you want to push your project to GitHub make sure you have med a:
 ```
 git pull
 ```
-this will tell that the local version is the latest version of that project in that branch compared to the one that exist on github.
-So when you do your git push it will overwrite the old version on github.
+this will tell that the local version is the latest version of that project in that branch compared to the one that exist on GitHub.
+So when you do your git push it will overwrite the old version on GitHub.
 
 
 -// Unsure
@@ -236,7 +236,7 @@ If you instead want to overwrite the version of the project you have locally you
 ```
 git fetch
 ```
-it will overwrite your local version to the version that exist on github.
+it will overwrite your local version to the version that exist on GitHub.
 (you can run a 
 ```
 git diff ...origin 
@@ -246,7 +246,7 @@ to check the difference between the versions.)
 
 [Return to Top](#git-and-github-summary)
 ## Push a branch to GitHub
-(branch name is the name you have created on your local computer. If you use ”main” as branch name which is usually the standard name of your branch)
+(branch name is the name you have created on your local computer. If you use ” main” as branch name which is usually the standard name of your branch)
 You specify branch you want to push to in the <branch name>.
 (If you have already established a connection with “git push -u origin <branch name>” you only need to write “git push”)
 ```
@@ -258,7 +258,7 @@ git push origin <branch name>
 ```
 (push to specific branch in that repository)
 
-You could replace “origin” to the address to your repo folder on github for example.
+You could replace “origin” to the address to your repo folder on GitHub for example.
 ```
 git push git@github.com:M0ller/new.git <branch name>
 ```
@@ -272,7 +272,7 @@ To avoid writing origin master every time we can write:
 ```
 git push -u origin master
 ```
-That will set this local repo to always push to this connected repo on github in the future so after this you only need to write:
+That will set this local repo to always push to this connected repo on GitHub in the future so after this you only need to write:
 ```
 git push
 ```
@@ -311,11 +311,11 @@ git diff <name of the other branch>
 
 [Return to Top](#git-and-github-summary)
 ## Compare & Pull request on GitHub
-On GitHub you can do a “compare & pull request” to create a pull request, there you can compare two branches and then merge them together. Example; comparing myOtherBranch with master, there you can choose to create a “create pull request” and also with option to write commets about changes.
+On GitHub, you can do a “compare & pull request” to create a pull request, there you can compare two branches and then merge them together. Example; comparing myOtherBranch with master, there you can choose to create a “create pull request” and also with option to write a comment about changes.
 
 After clicking the “create pull request” you can choose to “resolve conversation” before you click the “Merge pull request” which will finalize the merge onto master branch.
 
-After doing that on github, make sure to use a “git pull” on your local computer in the right branch so it will also be updated.
+After doing that on GitHub, make sure to use a “git pull” on your local computer in the right branch, so it will also be updated.
 
 [Return to Top](#git-and-github-summary)
 ## Delete a local branch
@@ -327,7 +327,7 @@ git branch -d < name of branch to be deleted >
 
 [Return to Top](#git-and-github-summary)
 ## Delete a remote branch
-To delete a branch remotely (on your github repository) you write:
+To delete a branch remotely (on your GitHub repository) you write:
 ```
 git push origin --delete < branch name to be deleted >
 ```
@@ -344,13 +344,13 @@ git checkout -b <local branch> origin/<remote branch>
 [Return to Top](#git-and-github-summary)
 ## Merge;
 
-If there is changes in the master branch you want to make a pull request to your local computer so you master branch stays updated with the code that is on github. Example use “git pull”.
+If there is changes in the master branch you want to make a pull request to your local computer, so you master branch stays updated with the code that is on GitHub. Example use “git pull”.
 
-Once you have the latest version of your master branch on your computer you might want to merge those changes into the branch that you are working on. For example you are working on a branch called “myOtherBranch”.
+Once you have the latest version of your master branch on your computer you might want to merge those changes into the branch that you are working on. For example, you are working on a branch called “myOtherBranch”.
 You want to make sure you are in that branch first by either checking “git branch” or move to it with “git checkout myOtherBranch”.
 
 You might want to inspect the differences between the two branches with “git diff master”
-once you done that you may want to merge the changes to your “myOtherBranch”.
+once you're done that you may want to merge the changes to your “myOtherBranch”.
 
 Do the merge with master using. 
 ```
@@ -367,7 +367,7 @@ Original code in your “master”  branch
 >>>>>>> master
 ```
   
-Once you have manually fix the changes your merge is done. You can run a “git status” and see that both files are modified. You can also run a “git diff” to see the changes that is made onto both files.
+Once you have manually fixed the changes your merge is done. You can run a “git status” and see that both files are modified. You can also run a “git diff” to see the changes that is made onto both files.
 
 Then you can do your commit to save these changes with: 
 ```
