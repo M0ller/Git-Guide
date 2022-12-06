@@ -14,7 +14,7 @@ This is my own customized Git & GitHub "Cheat sheet/Guide" because my memory is 
 * [Create a commit](#create-a-commit)
 * [Changing Branch with checkout](#changing-branch-with-checkout)
 * [Undo a commit](#undo-a-commit)
-* [See last changes/history](#see-last-changes/history)
+* [See last changes/history](#see-last-changes-/-history)
 * [Git add+commit shortcut](#git-addcommit-shortcut)
 * [Create new a branch (creates a branch and move to that branch)](#create-new-a-branch-creates-a-branch-and-move-to-that-branch)
 * [Upload a repo to GitHub](#upload-a-repo-to-github)
