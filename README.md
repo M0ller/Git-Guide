@@ -1,4 +1,4 @@
-# Git and GitHub Summary
+# Git and GitHub help
 
 ### My personal summary of Git commands that i use often.
 
