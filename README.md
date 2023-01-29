@@ -1,5 +1,7 @@
 # Git and GitHub Summary
 
+### My personal summary of Git commands that i use often.
+
 This is my own customized Git & GitHub "Cheat sheet/Guide" because my memory is like a goldfish. Feel free to use.
 
 < some text > the “< >” is to illustrate what text that should be in that position.
