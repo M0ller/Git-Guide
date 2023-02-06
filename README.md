@@ -165,7 +165,7 @@ This will revert that specific change. In order to find the specific change run 
 
 If you want to revert changes and have temp completely removed back to a certain time in the history you can write:
 ```
-  git reset  -- hard <hashcode>
+  git reset <hashcode> --hard 
   ```
 This will onstage all “git added files” and commits and remove everything back to that point in time.
 
