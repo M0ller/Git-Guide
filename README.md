@@ -15,7 +15,7 @@ This is my own customized Git & GitHub "Cheat sheet/Guide" because my memory is 
 * [Add file before a commit](#add-file-before-a-commit)
 * [Create a commit](#create-a-commit)
 * [Changing Branch with checkout](#changing-branch-with-checkout)
-* [Undo a commit](#undo-a-commit)
+* [Undo a commit](#undo-a-commit-or-reset-to-a-specific-commit)
 * [See last changes/history](#see-last-changeshistory)
 * [Git add+commit shortcut](#git-addcommit-shortcut)
 * [Create new a branch (creates a branch and move to that branch)](#create-new-a-branch-creates-a-branch-and-move-to-that-branch)
@@ -145,7 +145,7 @@ If you have local changes on your branch and want to change to another branch yo
   Can add more indent explanation for how to use the stash command.
 
 [Return to Top](#git-and-github-summary)
-## Undo a commit
+## Undo a commit or reset to a specific commit
 
 If you have gone through a commit like the following.
 ```
