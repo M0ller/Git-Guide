@@ -30,6 +30,11 @@ This is my own customized Git & GitHub "Cheat sheet/Guide" because my memory is 
 * [Delete a remote branch](#delete-a-remote-branch)
 * [Replace a local branch with a remote branch](#replace-a-local-branch-with-a-remote-branch)
 * [Merge](#merge)
+* [Archive with tag](#archive-with-tag)
+* [Get remote tag](#get-remote-tag)
+* [Delete tag local or remote](#delete-tag-local-or-remote)
+* [Restore branch from tag](#restore-branch-from-tag)
+* [Show tags local or remote](#show-tags-local-or-remote)
 
 ## Create git repository
 do it either with the terminal or manually.
@@ -377,4 +382,19 @@ Then you can do your commit to save these changes with:
 ```
 After you are done you can go and check your master branch “git checkout master” and see it is still the same. If you go into your own branch “git checkout myOtherBranch” you can see you have the changes from the master branch in your “myOtherBranch” and can continue working on your project.
 
+[Return to Top](#git-and-github-summary)
+## Archive with tag
+  
+[Return to Top](#git-and-github-summary)
+## Get remote tag
+  
+[Return to Top](#git-and-github-summary)
+## Delete tag local or remote
+
+[Return to Top](#git-and-github-summary)
+## Restore branch from tag
+  
+[Return to Top](#git-and-github-summary)
+## Show tags local or remote
+  
 [Return to Top](#git-and-github-summary)
