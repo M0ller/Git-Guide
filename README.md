@@ -419,11 +419,14 @@ git branch -d my-branch
 ```
 
 Delete remote:
-
-> ```git push origin :my-branch```
-
+ 
+```
+git push origin :my-branch
+```
 or
-> ```git push origin --delete my-branch```
+```
+git push origin --delete my-branch
+```
 
 
 [Return to Top](#git-and-github-help)
