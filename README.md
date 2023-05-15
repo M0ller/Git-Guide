@@ -30,7 +30,7 @@ This is my own customized Git & GitHub "Cheat sheet/Guide" because my memory is 
 * [Delete a remote branch](#delete-a-remote-branch)
 * [Replace a local branch with a remote branch](#replace-a-local-branch-with-a-remote-branch)
 * [Merge](#merge)
-* [Archive with tag](#archive-with-tag)
+* [Archive with tag](#archive-branch-with-tag)
 * [Get remote tag](#get-remote-tag)
 * [Delete tag local or remote](#delete-tag-local-or-remote)
 * [Restore branch from tag](#restore-branch-from-tag)
@@ -42,7 +42,7 @@ Ex
 mkdir myProject
 cd myProject
 
-[Return to Top](#git-and-github-summary)
+[Return to Top](#git-and-github-help)
 ## Copy a remote branch repository (from GitHub)
 Be in the folder where you want your repo to be created.
 
@@ -73,25 +73,25 @@ Then just move into that branch by writing:
 git checkout < Branch name > 
 ```
 
-[Return to Top](#git-and-github-summary)
+[Return to Top](#git-and-github-help)
 ## Initialize the git repository
 ```
   git init
 ```
 
-[Return to Top](#git-and-github-summary)
+[Return to Top](#git-and-github-help)
 ## Check the current state of the files in the folder
 ```
   git status
 ```
 
-[Return to Top](#git-and-github-summary)
+[Return to Top](#git-and-github-help)
 ## Remove a file
 ```
   git rm -f <filename>
 ```
 
-[Return to Top](#git-and-github-summary)
+[Return to Top](#git-and-github-help)
 ## Add file before a commit
 Single file write:
 ```
@@ -116,7 +116,7 @@ git add -A
   ```
 ( “-A” is a short command for “--all” )
 
-[Return to Top](#git-and-github-summary)
+[Return to Top](#git-and-github-help)
 ## Create a commit
   ```
 git commit -m “my first commit”
@@ -127,7 +127,7 @@ If you have added a file but regret it you can revert it by writing
 “git reset <the file you added which you want to revert>”
 Or just “git reset” and the changes will be reverted. So if you use a “git status” again you will see that changes haven't been staged again.
 
-[Return to Top](#git-and-github-summary)
+[Return to Top](#git-and-github-help)
 ## Changing Branch with checkout
   
 If you have local changes on your branch and want to change to another branch you have three options before changing to the new branch.
@@ -149,7 +149,7 @@ If you have local changes on your branch and want to change to another branch yo
   git stash stores away the local changes in its own directory where you later can revisit a list of stashes. Generally not recommended to use.
   Can add more indent explanation for how to use the stash command.
 
-[Return to Top](#git-and-github-summary)
+[Return to Top](#git-and-github-help)
 ## Undo a commit or reset to a specific commit
 
 If you have gone through a commit like the following.
@@ -174,7 +174,7 @@ If you want to revert changes and have temp completely removed back to a certain
   ```
 This will onstage all “git added files” and commits and remove everything back to that point in time.
 
-[Return to Top](#git-and-github-summary)
+[Return to Top](#git-and-github-help)
 ## See last changes/history
 If you want to see the last changes that have been made you can write:
   ```
@@ -184,7 +184,7 @@ and then click with space-bar to see further back in the history. Each change wi
 
 To jump out of the log click “q”
 
-[Return to Top](#git-and-github-summary)
+[Return to Top](#git-and-github-help)
 ## Git add+commit shortcut
 A shortcut to use both git add and commit if it's a single file you can write “-am”
 But it only works on modified files. And there must have been a “git add “ and “git commit” before.
@@ -195,7 +195,7 @@ Write:
 git commit -am “my message”
 ```
 
-[Return to Top](#git-and-github-summary)
+[Return to Top](#git-and-github-help)
 ## Create new a branch (creates a branch and move to that branch)
 To see display all existing branches use:
 ```
@@ -216,7 +216,7 @@ To move to specific branch use:
 git checkout <branch name>
 ```
 
-[Return to Top](#git-and-github-summary)
+[Return to Top](#git-and-github-help)
 ## Upload a repo to GitHub
 Create a new repository on your GitHub and if you want to push an existing repo from your directory from your local computer (that you are currently on) use the second option on GitHub
 ”…or push an existing repository from the command line”
@@ -228,7 +228,7 @@ git branch -M main
 git push -u origin main
 ```
 
-[Return to Top](#git-and-github-summary)
+[Return to Top](#git-and-github-help)
 ## Pull and Fetch to GitHub
 Before you want to push your project to GitHub make sure you have med a:
 ```
@@ -251,7 +251,7 @@ git diff ...origin
 to check the difference between the versions.)
 -//
 
-[Return to Top](#git-and-github-summary)
+[Return to Top](#git-and-github-help)
 ## Push a branch to GitHub
 (branch name is the name you have created on your local computer. If you use ” main” as branch name which is usually the standard name of your branch)
 You specify branch you want to push to in the <branch name>.
@@ -270,7 +270,7 @@ You could replace “origin” to the address to your repo folder on GitHub for 
 git push git@github.com:M0ller/new.git <branch name>
 ```
 
-[Return to Top](#git-and-github-summary)
+[Return to Top](#git-and-github-help)
 ## To push files to the connected repo
 ```
 git push origin master
@@ -292,7 +292,7 @@ git push -u origin <branch name>
 ```
 “--set-upstream” is the same as “-u” 
 
-[Return to Top](#git-and-github-summary)
+[Return to Top](#git-and-github-help)
 ## To connect a local repo to GitHub
 Create a new repo in GitHub and copy its ssh or http link. 
 (example: git@github.com:M0ller/new.git )
@@ -309,14 +309,14 @@ To check the remote connection you have made write:
 git remote -v
 ```
 
-[Return to Top](#git-and-github-summary)
+[Return to Top](#git-and-github-help)
 ## Compare two branches
 Display different between two branches. If you are in your master branch and want to look at the differences between it and another branch you write:
 ```
 git diff <name of the other branch>
 ```
 
-[Return to Top](#git-and-github-summary)
+[Return to Top](#git-and-github-help)
 ## Compare & Pull request on GitHub
 On GitHub, you can do a “compare & pull request” to create a pull request, there you can compare two branches and then merge them together. Example; comparing myOtherBranch with master, there you can choose to create a “create pull request” and also with option to write a comment about changes.
 
@@ -324,7 +324,7 @@ After clicking the “create pull request” you can choose to “resolve conver
 
 After doing that on GitHub, make sure to use a “git pull” on your local computer in the right branch, so it will also be updated.
 
-[Return to Top](#git-and-github-summary)
+[Return to Top](#git-and-github-help)
 ## Delete a local branch
 When you are done with the branch you can delete it by writing
 “-d” is for delete.
@@ -332,14 +332,14 @@ When you are done with the branch you can delete it by writing
 git branch -d < name of branch to be deleted >
 ```
 
-[Return to Top](#git-and-github-summary)
+[Return to Top](#git-and-github-help)
 ## Delete a remote branch
 To delete a branch remotely (on your GitHub repository) you write:
 ```
 git push origin --delete < branch name to be deleted >
 ```
 
-[Return to Top](#git-and-github-summary)
+[Return to Top](#git-and-github-help)
 ## Replace a local branch with a remote branch
 To replace a local branch with a remote branch you need to first 1.delete your local branch, then 2.fetch the remote branch, then 3.rebuild the local branch with the remote branch.
 ```
@@ -348,7 +348,7 @@ git fetch origin <remote branch>
 git checkout -b <local branch> origin/<remote branch>
 ```
 
-[Return to Top](#git-and-github-summary)
+[Return to Top](#git-and-github-help)
 ## Merge;
 
 If there is changes in the master branch you want to make a pull request to your local computer, so you master branch stays updated with the code that is on GitHub. Example use “git pull”.
@@ -382,19 +382,99 @@ Then you can do your commit to save these changes with:
 ```
 After you are done you can go and check your master branch “git checkout master” and see it is still the same. If you go into your own branch “git checkout myOtherBranch” you can see you have the changes from the master branch in your “myOtherBranch” and can continue working on your project.
 
-[Return to Top](#git-and-github-summary)
-## Archive with tag
-  
-[Return to Top](#git-and-github-summary)
-## Get remote tag
-  
-[Return to Top](#git-and-github-summary)
+[Return to Top](#git-and-github-help)
+## Archive Branch with tag
+
+First checkout the branch you want to archive
+  ```
+  git checkout my-branch
+  ```
+
+Then create a tag for the branch. <br>
+You can choose to format yourself, I use ``archive/my-branch``
+  ```
+  git tag archive/my-branch
+  ```
+
+After that i push the tag to the remote repository.
+
+**push one tag**
+  ```
+  git push origin archive/my-branch
+  ```
+**push all tags**
+  ```
+  git push origin --tags
+  ```
+
+Then optionally you would want to remove the branch both locally and on the remote repository. 
+Check [Delete tag local or remote](#delete-tag-local-or-remote) for how to do so.
+
+[Return to Top](#git-and-github-help)
 ## Delete tag local or remote
 
-[Return to Top](#git-and-github-summary)
-## Restore branch from tag
+Delete locally:
+```
+git branch -d my-branch
+```
+
+Delete remote:
+
+> git push origin :my-branch
+
+or
+> git push origin --delete my-branch
+
+
+
+
+[Return to Top](#git-and-github-help)
+## Get remote tag
   
-[Return to Top](#git-and-github-summary)
+Get remote tags:
+``` 
+git fetch --tags origin
+```
+
+[Return to Top](#git-and-github-help)
+## Restore branch from tag
+
+If you dont have the tag locally you will need to first fetch the remote tags.
+You can see the tag name using ``git tag`` and see the tag id with ``git show-ref --tags``.
+
+You can copy the branch name from the ``git tag`` for the <branch-name> and the tag id from ``git show-ref --tags``
+
+To restore the archived branch (tag):
+```
+git branch <branch-name> <tag-id>
+```
+
+Example look:
+```
+git branch test-archive-branch 6c4b2cd12220f45e4bf18cf923bc94d526a02fee
+```
+
+Then checkout to your branch.
+``` 
+git checkout branch-name
+```
+  
+[Return to Top](#git-and-github-help)
 ## Show tags local or remote
   
-[Return to Top](#git-and-github-summary)
+Show local tag names:
+```
+git tag
+```
+
+Show local tags with both their tag and tag name:
+```
+git show-ref --tags
+```
+
+Show remote tags:
+```
+git ls-remote --tags origin
+```
+
+[Return to Top](#git-and-github-help)
