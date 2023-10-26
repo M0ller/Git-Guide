@@ -30,7 +30,7 @@ This is my own customized Git & GitHub "Cheat sheet/Guide" because my memory is 
 * [Delete a remote branch](#delete-a-remote-branch)
 * [Replace a local branch with a remote branch](#replace-a-local-branch-with-a-remote-branch)
 * [Merge](#merge)
-* [Archive with tag](#archive-branch-with-tag)
+* [Archive or version control with tag](#archive-branch-with-tag)
 * [Get remote tag](#get-remote-tag)
 * [Delete tag local or remote](#delete-tag-local-or-remote)
 * [Restore branch from tag](#restore-branch-from-tag)
