@@ -383,15 +383,16 @@ Then you can do your commit to save these changes with:
 After you are done you can go and check your master branch “git checkout master” and see it is still the same. If you go into your own branch “git checkout myOtherBranch” you can see you have the changes from the master branch in your “myOtherBranch” and can continue working on your project.
 
 [Return to Top](#git-and-github-help)
-## Archive Branch with tag
+##  Branch with tag
 
-First checkout the branch you want to archive
+First checkout the branch you want to 
   ```
   git checkout my-branch
   ```
 
 Then create a tag for the branch. <br>
-You can choose to format yourself, I use ``archive/my-branch``
+You can choose to format yourself, I use ``archive/my-branch``.
+Or you can use it for version control as ``v1.0.0/my-branch`` 
   ```
   git tag archive/my-branch
   ```
