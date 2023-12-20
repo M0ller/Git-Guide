@@ -394,14 +394,14 @@ Then create a tag for the branch. <br>
 You can choose to format yourself, I use ``archive/my-branch``.
 Or you can use it for version control as ``v1.0.0/my-branch`` 
   ```
-  git tag archive/my-branch
+  git tag archive/my-tag
   ```
 
 After that i push the tag to the remote repository.
 
 **push one tag**
   ```
-  git push origin archive/my-branch
+  git push origin archive/my-tag
   ```
 **push all tags**
   ```
@@ -416,13 +416,13 @@ Check [Delete tag local or remote](#delete-tag-local-or-remote) for how to do so
 
 Delete locally:
 ```
-git branch -d my-branch
+git tag -d my-tag
 ```
 
 Delete remote:
  
 ```
-git push origin :my-branch
+git push origin :my-tag
 ```
 or
 ```
@@ -448,7 +448,7 @@ You can copy the branch name from the ``git tag`` for the <branch-name> and the 
 
 To restore the archived branch (tag):
 ```
-git branch <branch-name> <tag-id>
+git branch <tag-name> <tag-id>
 ```
 
 Example look:
@@ -458,7 +458,7 @@ git branch test-archive-branch 6c4b2cd12220f45e4bf18cf923bc94d526a02fee
 
 Then checkout to your branch.
 ``` 
-git checkout branch-name
+git checkout tag-name
 ```
   
 [Return to Top](#git-and-github-help)
