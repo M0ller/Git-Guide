@@ -30,7 +30,7 @@ This is my own customized Git & GitHub "Cheat sheet/Guide" because my memory is 
 * [Delete a remote branch](#delete-a-remote-branch)
 * [Replace a local branch with a remote branch](#replace-a-local-branch-with-a-remote-branch)
 * [Merge](#merge)
-* [Archive or version control with tag](#archive-branch-with-tag)
+* [Archive or version control with tag](#archive-or-version-control-with-tag)
 * [Get remote tag](#get-remote-tag)
 * [Delete tag local or remote](#delete-tag-local-or-remote)
 * [Restore branch from tag](#restore-branch-from-tag)
@@ -383,7 +383,7 @@ Then you can do your commit to save these changes with:
 After you are done you can go and check your master branch “git checkout master” and see it is still the same. If you go into your own branch “git checkout myOtherBranch” you can see you have the changes from the master branch in your “myOtherBranch” and can continue working on your project.
 
 [Return to Top](#git-and-github-help)
-##  Branch with tag
+## Archive or version control with tag
 
 First checkout the branch you want to 
   ```
@@ -411,6 +411,15 @@ After that i push the tag to the remote repository.
 Then optionally you would want to remove the branch both locally and on the remote repository. 
 Check [Delete tag local or remote](#delete-tag-local-or-remote) for how to do so.
 
+
+[Return to Top](#git-and-github-help)
+## Get remote tag
+  
+Get remote tags:
+``` 
+git fetch --tags origin
+```
+
 [Return to Top](#git-and-github-help)
 ## Delete tag local or remote
 
@@ -427,15 +436,6 @@ git push origin :my-tag
 or
 ```
 git push origin --delete my-branch
-```
-
-
-[Return to Top](#git-and-github-help)
-## Get remote tag
-  
-Get remote tags:
-``` 
-git fetch --tags origin
 ```
 
 [Return to Top](#git-and-github-help)
